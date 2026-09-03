@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { experience } from "@/content/experience";
+import { primaryExperience } from "@/content/experience";
 
 export function ExperiencePreview() {
-  const [primary] = experience;
-
   return (
     <Section
       eyebrow="Experience"
@@ -14,13 +12,13 @@ export function ExperiencePreview() {
     >
       <article className="max-w-3xl">
         <h3 className="font-display text-xl font-semibold text-ink md:text-2xl">
-          {primary.title}
+          {primaryExperience.title}
         </h3>
         <p className="mt-2 font-mono text-xs tracking-wide text-ink-faint">
-          {primary.company} · {primary.period}
+          {primaryExperience.company} · {primaryExperience.period}
         </p>
         <ul className="mt-6 space-y-3">
-          {primary.bullets.slice(0, 3).map((bullet) => (
+          {primaryExperience.bullets.slice(0, 3).map((bullet) => (
             <li
               key={bullet}
               className="border-l-2 border-accent/40 pl-4 text-sm leading-relaxed text-ink-muted md:text-base"

@@ -4,7 +4,8 @@ import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact ${site.name} — ${site.role}.`,
+  description:
+    "Contact Tajbir Hossain for remote full-stack or backend roles — email mdtajbirhossain030@gmail.com or reach out via GitHub.",
 };
 
 export default function ContactPage() {

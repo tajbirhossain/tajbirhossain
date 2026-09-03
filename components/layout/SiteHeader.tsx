@@ -38,6 +38,12 @@ export function SiteHeader() {
               </Link>
             );
           })}
+          <a
+            href="/resume.pdf"
+            className="text-sm tracking-wide text-ink-muted transition-colors duration-200 hover:text-ink"
+          >
+            Resume
+          </a>
         </nav>
 
         <button
@@ -68,6 +74,15 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
+            <li>
+              <a
+                href="/resume.pdf"
+                className="block py-1 text-base text-ink"
+                onClick={() => setOpen(false)}
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </nav>
       ) : null}

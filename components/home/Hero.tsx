@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { GithubCard } from "@/components/ui/GithubCard";
 import { site } from "@/content/site";
 
 export function Hero() {
@@ -19,9 +20,15 @@ export function Hero() {
         </p>
         <div className="reveal reveal-delay-3 mt-10 flex flex-wrap gap-3">
           <ButtonLink href="/work">View selected work</ButtonLink>
-          <ButtonLink href="/contact" variant="secondary">
+          <ButtonLink href="/resume.pdf" variant="secondary" external>
+            Download Resume
+          </ButtonLink>
+          <ButtonLink href="/contact" variant="ghost">
             Contact
           </ButtonLink>
+        </div>
+        <div className="reveal reveal-delay-3 mt-10 max-w-md">
+          <GithubCard />
         </div>
       </div>
     </section>

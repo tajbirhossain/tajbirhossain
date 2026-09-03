@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { education, experience, languages } from "@/content/experience";
+import { GithubCard } from "@/components/ui/GithubCard";
+import {
+  earlierExperience,
+  education,
+  languages,
+  primaryExperience,
+} from "@/content/experience";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: site.summary,
+  description:
+    "Background on Tajbir Hossain — 5+ years independent full-stack engineering, self-taught backend fundamentals, and remote delivery for international clients.",
 };
 
 export default function AboutPage() {
@@ -24,33 +31,58 @@ export default function AboutPage() {
         <p className="mt-4 text-base leading-relaxed text-ink-muted md:text-lg">
           {site.seeking}
         </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <ButtonLink href="/resume.pdf" external>
+            Download Resume
+          </ButtonLink>
+          <ButtonLink href="/contact" variant="secondary">
+            Contact
+          </ButtonLink>
+        </div>
       </header>
+
+      <div className="mt-10 max-w-xl">
+        <GithubCard />
+      </div>
 
       <section className="mt-16 border-t border-border pt-14 md:mt-20">
         <h2 className="font-display text-2xl font-semibold tracking-tight text-ink md:text-3xl">
           Experience
         </h2>
-        <div className="mt-10 space-y-14">
-          {experience.map((role) => (
-            <article key={`${role.title}-${role.period}`} className="max-w-3xl">
-              <h3 className="font-display text-xl font-semibold text-ink">
-                {role.title}
-              </h3>
-              <p className="mt-2 font-mono text-xs tracking-wide text-ink-faint">
-                {role.company} · {role.period}
-              </p>
-              <ul className="mt-5 space-y-3">
-                {role.bullets.map((bullet) => (
-                  <li
-                    key={bullet}
-                    className="border-l-2 border-accent/35 pl-4 text-sm leading-relaxed text-ink-muted md:text-base"
-                  >
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
+        <article className="mt-10 max-w-3xl">
+          <h3 className="font-display text-xl font-semibold text-ink">
+            {primaryExperience.title}
+          </h3>
+          <p className="mt-2 font-mono text-xs tracking-wide text-ink-faint">
+            {primaryExperience.company} · {primaryExperience.period}
+          </p>
+          <ul className="mt-5 space-y-3">
+            {primaryExperience.bullets.map((bullet) => (
+              <li
+                key={bullet}
+                className="border-l-2 border-accent/35 pl-4 text-sm leading-relaxed text-ink-muted md:text-base"
+              >
+                {bullet}
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <div className="mt-12 max-w-3xl">
+          <h3 className="font-mono text-xs uppercase tracking-[0.16em] text-ink-faint">
+            Earlier Experience
+          </h3>
+          <p className="mt-3 text-sm leading-relaxed text-ink-muted md:text-base">
+            <span className="font-medium text-ink">
+              {earlierExperience.title}
+            </span>
+            {" · "}
+            {earlierExperience.company}
+            {" · "}
+            {earlierExperience.period}
+            {" — "}
+            {earlierExperience.summary}
+          </p>
         </div>
       </section>
 
@@ -64,6 +96,7 @@ export default function AboutPage() {
             {education.period}
           </p>
           <p className="mt-2 text-ink-muted">{education.degree}</p>
+          <p className="mt-3 text-sm text-ink-muted">{education.note}</p>
         </div>
         <div>
           <h2 className="font-display text-2xl font-semibold tracking-tight text-ink">

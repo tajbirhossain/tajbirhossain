@@ -5,7 +5,7 @@ import { projects } from "@/content/projects";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected full-stack and backend projects — multi-tenant SaaS, research platforms, and production mobile apps.",
+    "Selected work by Tajbir Hossain: multi-tenant SaaS backends, research platforms with stream exports, and a Play Store React Native marketplace.",
 };
 
 export default function WorkPage() {
