@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "Portfolio of Tajbir Hossain, a full-stack engineer focused on production backends, REST APIs, PostgreSQL, and remote delivery for product teams.",
+    "Portfolio of Tajbir Hossain, a backend-focused full-stack engineer building production APIs with concurrency-safe writes, Redis/BullMQ reliability, and remote delivery for product teams.",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
     title: `${site.name} — ${site.role}`,
     description:
-      "Full-stack engineer building production backends, APIs, and products — Node.js, TypeScript, PostgreSQL, Redis, and Docker.",
+      "Backend-focused full-stack engineer — Node.js, TypeScript, PostgreSQL, Redis, BullMQ, and Docker.",
     type: "website",
   },
 };

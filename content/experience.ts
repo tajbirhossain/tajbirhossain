@@ -19,13 +19,9 @@ export const primaryExperience: ExperienceRole = {
   period: "May 2020 – Present",
   bullets: [
     "Delivered 100+ client projects across SaaS, APIs, and mobile apps for US, UK, and EU clients via Fiverr.",
-    // TODO: insert # of production APIs / SaaS products shipped here
     "Built production REST APIs with Node.js, Express.js, PostgreSQL, MongoDB, and Prisma — JWT authentication, RBAC, and multi-step business workflows for client SaaS products.",
-    // TODO: insert project count / % reduction in environment mismatch issues here
     "Standardized deployments with Docker across multiple client projects, eliminating recurring environment mismatch issues reported during handoffs.",
-    // TODO: insert record count / export size / memory improvement here
-    "Implemented high-volume data exports with Node.js streams on Absolute Market Research, avoiding memory spikes during large report generation.",
-    // TODO: insert concurrent client count / avg delivery cycle length here
+    "Implemented high-volume data exports with Node.js streams on a research-platform client project, avoiding memory spikes during large report generation.",
     "Owned full delivery cycles independently: requirements, architecture, implementation, deployment, and post-launch support in async remote settings.",
   ],
 };
@@ -35,7 +31,7 @@ export const earlierExperience: EarlierRole = {
   company: "Tortoiz Themes (part-time, concurrent)",
   period: "January 2021 – December 2021",
   summary:
-    "Commercial React templates for ThemeForest — reusable components and cross-browser compatibility.",
+    "Built commercial React templates for ThemeForest with reusable components and cross-browser compatibility; improved render performance on low-end devices.",
 };
 
 export const education = {

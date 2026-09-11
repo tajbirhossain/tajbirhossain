@@ -6,7 +6,7 @@ export function Fundamentals() {
     <Section
       eyebrow="Fundamentals"
       title="Backend-strong. Full-stack capable."
-      description="The stack I use to design schemas, ship APIs, queue background work, and deliver the interfaces that sit on top."
+      description="The stack I use to design schemas, ship APIs, keep writes concurrency-safe, queue background work, and deliver the interfaces that sit on top."
       className="mx-auto max-w-6xl border-t border-border px-5 md:px-8"
     >
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

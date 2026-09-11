@@ -5,7 +5,7 @@ import { projects } from "@/content/projects";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected work by Tajbir Hossain: multi-tenant SaaS backends, research platforms with stream exports, and a Play Store React Native marketplace.",
+    "Selected work by Tajbir Hossain: Subscription Tracker (API + Android + Gemini), and JBH International on Google Play.",
 };
 
 export default function WorkPage() {
@@ -19,8 +19,8 @@ export default function WorkPage() {
           Projects with production constraints
         </h1>
         <p className="mt-4 text-base leading-relaxed text-ink-muted md:text-lg">
-          Deep dives into systems where isolation, APIs, data pipelines, and
-          shipping quality mattered — not just demos.
+          Deep dives into systems where concurrency-safe writes, APIs, background
+          jobs, and shipping quality mattered — not just demos.
         </p>
       </header>
       <ProjectList projects={projects} />

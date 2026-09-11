@@ -1,6 +1,5 @@
-import { absoluteMarketResearch } from "./absolute-market-research";
-import { agencyClientPortal } from "./agency-client-portal";
 import { jbhInternational } from "./jbh-international";
+import { subscriptionTracker } from "./subscription-tracker";
 import type { Project } from "./types";
 
 /**
@@ -8,8 +7,7 @@ import type { Project } from "./types";
  * To add a project: create a file in this folder, then append it here.
  */
 export const projects: Project[] = [
-  agencyClientPortal,
-  absoluteMarketResearch,
+  subscriptionTracker,
   jbhInternational,
 ];
 

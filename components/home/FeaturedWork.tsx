@@ -11,7 +11,7 @@ export function FeaturedWork() {
     <Section
       eyebrow="Selected work"
       title="Systems that hold up in production"
-      description="Case studies focused on multi-tenant isolation, API design, data pipelines, and shipping real products."
+      description="Case studies focused on reliable APIs, concurrency-safe writes, background jobs, and shipping real products."
       className="mx-auto max-w-6xl px-5 md:px-8"
     >
       <ul className="flex flex-col gap-10 md:gap-14">
